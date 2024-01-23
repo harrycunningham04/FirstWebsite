@@ -1,0 +1,530 @@
+/*sections------------------------------------------------------------------- */
+body {
+    background-color: aqua;
+    color: #333;
+    font-family: Georgia, "Times New Roman", Times, Serif;
+    font-size: 100%;
+    line-height: 1.5;
+}
+@media screen and (min-width: 750px) {
+    body { 
+        background-color: rgb(255, 136, 0);
+        color: #333;
+        font-family: Georgia, "Times New Roman", Times, Serif;
+        font-size: 100%;
+        line-height: 1.5;
+    }
+}
+#index {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-areas: 
+    "banner"
+    "menu"
+    "nav"
+    "table"
+    "main"
+    "aside"
+    "footer";
+
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+#contact {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "banner"
+    "menu"
+    "main"
+    "footer";
+
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(144, 144, 144);
+    padding-right: 10px;
+    padding-left: 10px;
+}
+#tutorial {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "banner"
+    "menu"
+    "nav"
+    "table"
+    "main"
+    "aside"
+    "footer";
+
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(169, 169, 169);
+    padding-right: 10px;
+    padding-left: 10px;
+}
+@media(min-width: 750px){
+    #index {
+        grid-template-columns: 2fr 4fr;
+        grid-template-areas: 
+        "banner banner"
+        "menu menu"
+        "nav table"
+        "aside main"
+        "footer footer";
+
+        max-width: 1500px;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: white;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    #contact {
+        grid-template-columns: 2fr 4fr;
+        grid-template-areas: 
+        "banner banner"
+        "menu menu"
+        "main main"
+        "footer footer";
+
+        max-width: 1500px;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: white;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    #tutorial {
+        grid-template-columns: 2fr 4fr;
+        grid-template-areas: 
+        "banner banner"
+        "menu menu"
+        "main aside"
+        "footer footer";
+
+        max-width: 1500px;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: rgb(169, 169, 169);
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+}
+@media(min-width: 1000px){
+    #index {
+        grid-template-columns: 1.5fr 4fr 1.5fr;
+        grid-template-areas: 
+        "banner banner banner"
+        "menu menu menu"
+        "nav table aside"
+        "nav main aside"
+        "footer footer footer";
+
+        max-width: 1500px;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: white;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    #contact {
+        grid-template-columns: 1.5fr 4fr 1.5fr;
+        grid-template-areas: 
+        "banner banner banner"
+        "menu menu menu"
+        "main main main"
+        "footer footer footer";
+
+        max-width: 1500px;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: rgb(255, 192, 192);
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    #tutorial {
+        grid-template-columns: 1.5fr 4fr 1.5fr;
+        grid-template-areas: 
+        "banner banner banner"
+        "menu menu menu"
+        "main main aside"
+        "footer footer footer";
+
+        max-width: 1500px;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: rgb(216, 216, 216);
+        padding-right: 10px;
+        padding-left: 1px;
+    }
+}
+main  {
+    grid-area: main;
+}
+article	{
+}
+aside	{
+    grid-area: aside;
+    background-color: #0090D2;
+    border-radius: 25px;
+    color: rgb(3, 3, 3);
+}
+.references { 
+    color: rgb(0, 0, 0);
+}
+footer {
+    grid-area: footer;
+}
+header {
+}
+.post	{
+    margin-top: 2px;
+	margin-bottom: 2px;
+    color: whitesmoke;
+	background-color: rgb(98, 96, 96);
+    border-radius: 25px;
+}
+nav	{
+    grid-area: nav;
+    background-color: #0090D2;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+}
+.banner{
+    grid-area: banner;
+    background-color: #fff;
+}
+.menu{
+    grid-area: menu;
+    background-color: #000;
+}
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu li {
+    display: block;
+    margin: 0;
+    list-style-type: none;
+    font-size: 18px;
+  }
+.menu a {
+    display: block;
+    padding: .7em 1.25em .7em 1.25em;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid gray;
+  }
+.menu a:link { color: #fff; }
+.menu a:visited { color: #DFDFDF; }
+.menu a:focus { color: #C00; }
+.menu a:hover { color: pink; }
+.menu a:active { color: #C00; }
+
+@media (min-width: 750px)
+{
+ .banner { padding: 0 0 0 3em; }
+/* Menu navigation - inline layout for wider screens */	
+ .menu { padding: 1em 0 1em 3em; }
+ .menu li
+ {
+  display: inline;
+  margin: 0 1em 0 0;
+ }
+ .menu a
+ {
+  display: inline;
+  padding: 0;
+  border-bottom: 0;
+ }
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    display: flex; 
+}
+.card-content {
+    flex-direction: row;
+    width: 100%;
+    border: 1px solid #f711ff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 1.25em 1.25em 0.3em 0;
+    padding: 1em;
+    color: rgb(33, 151, 23);
+    background-color: rgb(161, 178, 98);
+}
+  
+  /*640 px - tablet portrait orientation - 2 columns*/
+@media screen and (min-width: 40em){
+    .card { width: 50%; }
+}
+  /*960 px* - tablet landscape orientation and above - 3 columns*/
+@media screen and (min-width: 60em) {
+    .card { width: 33.33%; }
+}
+.media	{
+    margin: 0;
+    padding: 0;
+}
+.media li	{
+    margin: 0;
+    padding: 0;
+}
+label {
+    display: block;
+}
+input {
+    display: block;
+}
+input[type = "submit"] {
+    color: rgb(102, 102, 102);
+    background-color: rgb(195, 163, 163);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1.2em;
+    line-height: 1.25;
+    text-align: center;
+    width: auto;
+    border: 1px solid rgb(97, 183, 96);
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+}
+
+/*test*/
+
+@media screen and (min-width: 40em){
+
+    
+    .tutorial article { 
+        column-count: 2;
+        column-width: 20em;
+        column-gap: 1.5em;
+        padding: 1em 2em 1em 0;
+    }
+    
+    article h2	{
+        color: #900;
+        column-span: all; 
+    }   
+}
+
+
+
+/*headings------------------------------------------------------------------- */
+h1	{
+    font-family: 'Strait', sans-serif;
+    color: #F60;
+    font-size: 2.25em;
+    line-height: 1;
+}
+h2	{
+    font-size: 1.75em;
+    color: #0063A6;
+}
+h3 	{
+    text-align: center;
+    font-family: 'Strait', sans-serif;
+    font-size: 1.25em;
+    line-height: 1.5; 
+    color: rgb(246, 56, 56);  
+}
+h4  {
+    font-family: 'Strait', sans-serif;
+    font-size: 1em;
+    line-height: 1.5; 
+    color: #F60;
+    text-indent: 0.5em;
+}
+h5{
+    text-align: center;
+    font-family: 'Strait', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.5; 
+    color: rgb(87, 27, 27);  
+}
+legend {
+    text-align: center;
+}
+.post h4{
+    text-align: center;
+}
+.post p{
+    text-align: center;
+}
+
+.video-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+iframe{
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+    overflow: clip !important;
+    border: 5px solid #900;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /*16:9 */
+    height: 0; 
+}
+.video-container iframe {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+/*grouping------------------------------------------------------------------- */
+/*<p class="dropcap"> */
+p.dropcap:first-letter	{
+    float: left;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color:#F00;
+    font-size: 3em;
+    line-height: 0.4;
+    margin: 8px 5px 0 0;
+}
+p	{
+    text-indent: 0.5em;
+    font-size:1.25rem;
+    line-height: 1;
+    margin: 10px 0 10px 0;
+}
+blockquote	{
+}
+caption {
+    color: #F14A29;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+@media (max-width: 35em) {
+    table {
+     display:none;
+    }
+}
+table   {
+    text-align: center;
+    grid-area: table;
+    border: 1px solid black;
+    border-collapse: collapse;
+    border: 1px solid rgb(115, 112, 112);
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tbody tr:nth-child(odd) {
+    background-color: rgb(206, 206, 206);
+}
+td{
+    border: 1px solid #666;
+    padding: 2px;
+}
+td:empty{
+
+}
+div.table{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+} 
+
+@media (min-width: 750px) {
+    form {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media (min-width: 1000px) {
+    form {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+}
+
+/*lists---------------------------------------------------------------------- */
+ul	{
+}
+li	{
+    margin-left: 20px;
+    line-height: 20px;
+}
+ol	{
+
+    list-style-type: decimal;
+}
+dl	{
+    line-height: 20px;
+}
+dt	{
+    font-weight: bolder;
+}
+dd	{
+    text-indent: 10px;
+}
+/*text------------------------------------------------------------------------ */
+em	{
+}
+strong	{
+}
+small	{
+}
+cite	{
+}
+time	{
+}
+/*image----------------------------------------------------------------------- */
+figure	{
+}
+figcaption	{
+}
+img	{
+    max-width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    border: 5px solid rgb(0, 0, 0);
+}
+.fltlt {
+    float: left;
+    margin-right: 8px;
+}    
+.clear {
+    clear: both;
+}
+/*anchors--------------------------------------------------------------------- */
+a:link	{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+a:visited {
+    color: rgb(0, 0, 0);
+}
+a:hover {
+    color: #fcf82c;
+    text-decoration: none;
+}
+a:active {
+    color: rgb(0, 0, 0);
+}
