@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+	
+    <head>
+		<meta charset="utf-8"><!--character encoding for the document (Unicode) -->
+		<title>Learning Journal </title><!--web page title -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel = "Stylesheet" href = "css/Stylesheet.css" >
+		<link rel = "Normalise" href = "css/Normalise.css" >
+		<link href="http://fonts.googleapis.com/css?family=Strait" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+<body>
+<!--Markup all web page content inside the 'body' tags -->
+	<div id="index">
+	<!--The 'wrapper' contains all the page content-->
+	
+    <header class = "banner"> <!--The main heading for the page -->
+		<h1>CI435 Learning Journal</h1>
+		<h2>How to make a responsive website</h2>
+	</header>
+
+	<nav class="menu">
+		<ul>
+		  <li><a href="">Learning journal</a></li>
+		  <li><a href="tutorial.html">Tutorial</a></li>
+		  <li><a href="contact.html">Contact me</a></li>
+		</ul>
+	</nav>
+
+	<nav>
+		<h3> The Weekly Posts</h3>
+		<ol>
+			<li> <a href="#week1">Getting started</a> </li>
+			<li> <a href="#week2">Learning more HTML</a> </li>
+			<li> <a href="#week3">More HTML markup</a> </li>
+			<li> <a href="#week4">CSS basics</a> </li>
+			<li> <a href="#week5">Styling text</a> </li>
+			<li> <a href="#week6">Making the learning journal responsive</a> </li>
+			<li> <a href="#week7">Flexible media</a> </li>
+			<li> <a href="#week8">CSS3 responsive layout</a> </li>
+			<li> <a href="#week9">HTML5 forms</a> </li>
+			<li> <a href="#week10">Evaluation</a> </li>
+		</ol>
+	</nav>
+    
+    <main><!--The main page content -->
+
+		
+		<div class="table"  >
+			<table  class = "center" >
+
+				<caption>Timetable</caption>
+	
+				<tbody>
+					<tr>
+						<th>Day/time</th>
+						<th>Monday</th>
+						<th>Tuesday</th>
+						<th>Wednesday</th>
+						<th>Thursday</th>
+						<th>Friday</th>
+					</tr>
+					<tr>
+						<td>9-10am</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>CI404 lab</td>
+					</tr>
+					<tr>
+						 <td>10-11am</td>
+						 <td></td>
+						 <td>CI453 lecture</td>
+						 <td></td>
+						 <td></td>
+						  <td>CI404 lab</td>
+					</tr>
+					<tr>
+						<td>11-12pm</td>
+						<td></td>
+						<td>CI435 lecture</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>12-13pm</td>
+						<td></td>
+						<td>CI401 seminar</td>
+						<td>CI401 lab</td>
+						<td>CI453 tutorial</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>13-14pm</td>
+						<td>CI401 lecture</td>
+						<td></td>
+						<td></td>
+						<td>CI405 lecture</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>14-15pm</td>
+						<td></td>
+						<td>CI435 lab</td>
+						<td></td>
+						<td></td>
+						<td>CI405 lab</td>
+					</tr>
+					<tr>
+						<td>15-16pm</td>
+						<td>CI404 lecture</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>16-17pm</td>
+						<td>CI404 lecture</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+        
+        	<h2>Weekly Posts</h2>
+	
+    	<article>
+			<header  class="post">
+			<h3><a id="week1"></a>Week 1: Getting started</h3>
+			<p>Published on <time datetime="2022-10-04"><strong>October 4, 2022</strong></time></p>
+			</header>
+
+			
+			<p>I have completed my first lab tutorial and ended up with a basic 3 page website where I have leant the following things:</p>
+			<ol>
+				<li>Set up the folders and files for my site on my workspace on the Brighton Domains web server </li>	
+				<li>Link two pages together with a navigation menu (relative link)</li>
+				<li>Create links to external webistes (absolute link)</li>
+				<li>Use h1 and h2 tags</li>
+				<li>Edit the page title</li>
+				<li>Validate HTML using the W3C validator</li>
+			</ol>
+	
+			<small>
+				<a href="#top">Go to top of page</a>
+			</small>
+			
+
+
+			
+			<header class="post">
+				<h3><a id="week2"></a>Week 2: Learning more HTML</h3>
+				<p>Published on <time datetime="2022-10-11"><strong>October 11, 2022</strong></time></p>
+			</header>
+
+			<p> I have completed my second lab tutorial. Ended with an image on my pages such as the one that can bee seen below.</p>
+
+
+			<img src = "images/MyFilesOrganised.png" alt="Showing my files organised.">
+
+
+			<p>
+				This week I have learnt how to put the dates in the heading of each weeks post through learning about the "time" tag so this allows for 
+				the date to be shown in the correct fashion. Then moved on to learning about images and the "img" tag that allows for me to show images that
+				I have stored in my images file on the website. As shown above, the image is of my files being organised and allows for controlled access to the right 
+				files so that I cannot accidentally call the wrong one when trying to do css but calling an image. Finally this week have learnt how to add email
+				links so that in the footer there is a possibility to contact me about my website. This was possible through the   "a href="mailto:myemailaddress"
+				allowing for me to add a relative link to my email.
+			</p>
+
+			<small>
+				<a href="#top">Go to top of page</a>
+			</small>
+
+
+
+			<header class="post">
+				<h3><a id="week3"></a>Week 3: More HTML markup</h3>
+				<p>Published on <time datetime="2022-10-18"><strong>October 18, 2022</strong></time></p>
+			</header>
+
+			<p> 
+				I have completed my third lab tutorial where i have learnt to create a table which can be seen below of my timetable. While also having learnt about the different type of lists that are available to use and how they are displayed.
+			    I have showed what i have learnt through the timetable being availble to be seen at the top of the website and different lists shown below.
+			</p>
+
+			<h4> Nesting a unordered list within an ordered list:</h4>
+
+			<ol>
+				<li>Week 1
+				  <ul>
+						<li>Set up site folder</li>
+						<li>Create index.html</li>
+						<li>Create guide.html</li>
+						<li>Link files in a lists for navigation</li>
+				</ul>
+				</li>
+				<li>Week 2
+				  <ul>
+						<li>Add posts and date</li>
+						<li>Add named anchors</li>
+				  </ul>
+			   </li>
+			</ol>
+			
+			<h4> Description lists:</h4>
+
+			<dl>
+				<dt><strong>HTML</strong></dt>
+				  <dd>Hyper-text markup language - markup language used to structure content</dd>
+				<dt><strong>CSS</strong></dt>
+				  <dd>Cascading stylesheets - used to define presentation of HTML elements</dd>
+				<dt><strong>JavaScript</strong></dt>
+				  <dd>Scripting language for adding interactive behaviour to web pages</dd>
+			</dl>
+
+			<div class = "fltlt">
+				<a href="http://www.w3.org/html/logo/">
+				<img alt="HTML5 Powered" height="200" src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" title="HTML5 Powered" width=150></a>
+			</div>
+
+			<p>
+				The W3C has made an HTML5 logo that you can add to your web page. 
+				The HTML5 logo is licensed under <a href="https://creativecommons.org/licenses/by/3.0/">
+				Creative Commons Attribution 3.0</a> and is free to use. 
+				This allows for me to create websites where a companies logo could be the link to their own website in the future.
+			<p class="clear"></p>
+
+			<small><a href="#top">Go to top of page</a></small>
+
+			<header class="post">
+				<h3><a id="week4"></a>Week 4: CSS basics</h3>
+				<p>Published on <time datetime="2022-10-25"><strong>October 25, 2022</strong></time></p>
+			</header>
+
+			<p>
+				This week I have learnt about CSS (cascading stlye sheets). This allows for websites to be able to have colour and change the way they look and how the 
+				website will be percieved by the user.
+			</p>
+			
+			<img src = "images/BeforeCss.png" height="279" alt="This is an image of the website before any css was used">
+
+			<p> 
+				These images show the effects that CSS has had on my website through the colour and buttons that are now available on the screen to go to the different web pages.
+				Earlier it only had black and white colours available and the table showed nothing  during free times in my day. As 
+				well as all links having different colours if they have been clicked on or not which I personally think looks strange and would cause issues further 
+				on as the website would be used more often.  
+			</p>
+
+			<div class="clear"></div>
+
+			<img src = "images/AfterCSS.png" height="279" alt="Showing the effect CSS had on my website"> 
+
+			<p>
+				The navagation section has been changed so that it looks like buttons has been used to allow for a cleaner 
+				look and aesthetic on the website. This allows for easier acces to the connected pages on the website for the user. In the future I would like to be able to change how the 
+				navagation section looks so that it is a navagation bar that changes from drop down and horizontal bar for when it is a larger screen. This would allow 
+				for a cleaner look that seems similar to the BBCS news website as that is were I have gotten this idea and inspiration from.
+			</p>
+
+
+			<small>
+				<a href="#top">Go to top of page</a>
+			</small>
+
+
+
+			<header class="post">
+				<h3><a id="week5"></a>Week 5: Styling text</h3>
+				<p>Published on <time datetime="2022-11-01"><strong>November 01, 2022</strong></time></p>
+			</header>
+
+			<p>
+				I have completed my fifth lab tutorial and in this week I learnt how to specify fonts that should also have back up fonts, as 
+				this allows for my website to be working no matter if the first choice font is not available in a certain browser. Also adding
+				the google fonts through connecting via absolute link to google's free font library allows for me to choose from 
+				more fonts that are potentially fancier. While using fancier fonts for titles are eye catching they cannot be used for all
+				text as they become hardier to read. This week have also learnt how to drop cap so that the first letter of the first word
+				in the first paragraph is large then the rest of the normal size. This creates a book like effect with the text. This can be 
+				seen in the first paragraph from pride and prejudice below:
+
+			</p>
+			
+
+			<p class="dropcap">
+				It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+				However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is 
+				so well fixed in the minds of the surrounding families that he is considered as the rightful property of some one or
+				other of their daughters.
+			</p>
+
+			<small>
+				<a href="#top">Go to top of page</a>
+			</small>
+
+
+
+			<header class="post">
+				<h3><a id="week6"></a>Week 6: Making learning journal page responsive</h3>
+				<p>Published on <time datetime="2022-11-08"><strong>November 08, 2022</strong></time></p>
+			</header>
+
+			<p>
+				While completing my sixth tutorial this week I have learnt the following things:
+			</p>
+
+			<ul>
+				<li>
+					The three core responsive web development techniques
+					<ol>
+						<li>Having a fluid layout</li>
+						<li>CSS media queries</li>
+						<li>Responsive media</li>
+					</ol>
+				</li>
+				<li>The viewpoint meta element</li>
+				<li>How to make a responsive page to size of device</li>
+			</ul>
+
+			<p>
+				The fluid and suitable layout allows for the website to be viewed differently on different devices with different screen sizes. As for a phone with
+				a very small screen the timetable item would disappear. While rearranging the screen and how parts are showen, allowing for the navagation 
+				bar changes from a drop down list to horizontal when the screen gets wider. This is something that allows for there not to be a side scroll within
+				the website which is the worst thing that can be done on a website.
+			</p>
+
+			<small>
+				<a href="#top">Go to top of page</a>
+			</small>
+
+			<header class="post">
+				<h3><a id="week7"></a>Week 7: Flexible media</h3>
+				<p>Published on <time datetime="2022-11-15"><strong>November 15, 2022</strong></time></p>
+			</header>
+
+			<p>
+				During this week's tutorial have learnt the "alt = "text description of the image". This is a very important feature to add to images which allows 
+				for them to be availble on sites that are read only. Allowing for the website to be more responsive to how the webite can be accesed
+			</p>
+
+			<img src="images/mediaedit.png" alt="This is showing images next to the text">
+
+			<p>
+				I know how to show my work like this however for this project I have decided not to for how it looks and my personal preference
+				of preferring it to be image then text. This is to allow for the image to be seen clearly showing the set difference that CSS has 
+				made to my website. 
+			</p>
+
+			<p style="text-align: center;">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/2KL-z9A56SQ" 
+					title="Tutorial: Learn how to use CSS Media Queries in less than 5 minutes" 
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+					allowfullscreen >
+				</iframe>
+			</p>
+
+			<small>
+				<a href="#top">Go to top of page</a>
+			</small>
+
+			<header class="post">
+				<h3><a id="week8"></a>Week 8: CSS3 responsive layout</h3>
+				<p>Published on <time datetime="2022-11-22"><strong>November 22, 2022</strong></time></p>
+			</header>
+
+			<p>
+				After my eigth lab tutorial I was taught how to use the flexbox functions to create a different type of layout. The layout 
+				uses boxes that contain the content that can be displayed in a responsive way to how big the screen is. 
+			</p>
+
+			<img src="images/Flexbox.png" alt="Showing how flexbox can be displayed">
+
+			<p>
+				I have also learnt how to display content on my website through two coloum displays so that there is the header of the text on the 
+				upper left side with text and photos in the columns. This allows for easy looking and reading as the length of the line is smaller 
+				so that the user is able to see the first and last word of the line without having to move their eyes. Which is important due to making 
+				the user's time on the website is very important. I have used this method of displaying content on my tutorial page as it looks very nice 
+				and with the images required to be displayed on the tutorial page means that the two coloumns are needed for one to be text and the other 
+				to hold the image.
+			</p>
+
+			<small>
+				<a href="#top">Go to top of page</a>
+			</small>
+
+			<header class="post">
+				<h3><a id="week9"></a>Week 9: HTML5 forms</h3>
+				<p>Published on <time datetime="2022-11-29"><strong>November 29, 2022</strong></time></p>
+			</header>
+
+			<p>
+				During this weeks lab session I learnt about forms and there different uses for websites, such as getting valuable information 
+				from the user. Also how styling of the forms can affect the users experience, as forms should be:
+			</p>
+
+			
+			<ul>
+				<li>Laid out clearly</li>
+				<li>Consistent design throughout the website</li>
+				<li>Clear guidance to user with feedback</li>
+			</ul>
+			
+
+			<p>
+				The learning continued into now knowing about the different options that are available in forms such as text boxes, checkboxes,
+				buttons and range meters. Each having their own specific functions that give vitual information from the user. Through learning 
+				about these different options i've managed to create my own form on the contact me page of the web site to include name and their 
+				information, what they have thought about my website and if they would like to recive more information about the website. This information that 
+				I will gather will not be stored through not having the aility to add javascript to store the information. However still have 
+				set my form to have required entries such as the name and email address of the user. With doing some independant study have found that leaving
+				a placeholder within the box where neccessary is effective for the user and them knowing what to enter.
+			</p>
+
+			<small>
+				<a href="#top">Go to top of page</a>
+			</small>
+
+			<header class="post">
+				<h3><a id="week10"></a>Week 10: Evaluation</h3>
+				<p>Published on <time datetime="2022-12-06"><strong>December 6, 2022</strong></time></p>
+			</header>
+
+			<p>
+				In my final tutorial I managed to evaluate my project as a whole while making constant improvements throughout the weeks I have completed
+				my website. Design of each page has been completed so that images have black boarders and videos with red borders, to show the clear differenec for the user.
+				With also the contact me page having been done I updated the contact page so that the button clears what the user has entered, creating what I think
+				is a cleaner look after as the form resets itself. I have checked the responsiveness of my website through different devices such as phones, tablets and laptops with each devive 
+				showing the correct output which can be seen below.
+			</p>
+
+			<img src = "images/Laptop.png" alt="Showing the website on a laptop format">
+
+			<p>
+				There are difference's within the laptop and phone version, such as the different backgrounds and layouts. These are needed for the 
+				size of the screens and the ability to read the text on screen would be difficult otherwise. The designs work well allowing the 
+				parts of the website to be displayed in ways so that the user has the best experience. Such as the referneces part moves to the bottom
+				on the phone and the weekly posts moving above the body of the website. Also as the timetable will eventually disappear once the screen
+				becomes to small so that it doesn't get distorted. This allows for the website to react accordingly and respond correctly to the size of the 
+				screen meaning the user has the best experience in the website.
+			</p>
+
+			<img src = "images/Phone.png" alt="Showing the website on a phone format">
+			
+			<p>
+				In my website I have used the "div id" to tell my different pages apart so that I can have different layouts on them allowing more variation
+				and responsiveness to my website. Through each page having independant layouts allows for each one to get their full potential from each 
+				design. Meaning the content can have maximum affect. As on the tutorial page I have the body taking up the majority of the screen as that 
+				is the main objective of the page, so that the user can learn the most about independant learning. 
+			</p>
+
+			<p>
+				Below shows the valid CSS that I have used on my website, through the badge being there.
+			</p>
+
+			<p>
+				<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhc920.brighton.domains%2Fci435%2Fcontact.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+					<img style="border:0;width:88px;height:31px"
+						src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+						alt="Valid CSS!" >
+				</a>
+			</p>
+
+			<small>
+				<a href="#top">Go to top of page</a>
+			</small>
+
+		</article>
+           
+    </main><!--Close main page content --> 
+        
+     <aside>
+        
+		<div class="references">
+			<h3>
+				References
+			</h3>
+		</div>
+
+        <ol>
+            <li><a href="http://validator.w3.org/">W3C markup validation service</a></li>
+			<li><a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhc920.brighton.domains%2Fci435%2Fcontact.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">W3C css-validator</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">MDN HTML Element Index</a></li>
+			<li>MDN description list - <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl</a></li>
+			<li>Creative Commons license - <a href="http://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/</a></li>
+			<li>w3schools - <a href="https://www.w3schools.com/html/default.asp">w3schools.com</a></li>
+			<li>How to use media queries - <a href="https://www.youtube.com/watch?v=2KL-z9A56SQ&t=2s&ab_channel=KevinPowell">youtube.com/watch</a></li>
+        </ol>
+            
+    </aside>    
+ 
+	<footer><!--Footer content -->
+		<small>&copy; 2022, 22835341.</small>
+		<a href="mailto:hc920@brighton.ac.uk">email 22835341.</a>
+	</footer>
+
+	</div><!--Close 'wrapper' div -->
+</body><!--Close 'body' -->
+</html><!--Close 'html' -->
